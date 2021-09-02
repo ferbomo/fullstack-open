@@ -1,0 +1,11 @@
+title New note spa
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa{content: "a note", date: "2021-09-01T19:40:47.553Z"}
+
+
+note over browser
+The server only returns the message note created and the browser renders
+again the notes list only.
+end note
+
+server-->browser: {"message":"note created"}
